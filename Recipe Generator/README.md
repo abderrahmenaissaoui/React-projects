@@ -1,6 +1,6 @@
 # 🍳 Chef Claude – AI-Powered Recipe Generator
 
-Chef Claude is a React-based web app that generates creative recipes from a list of ingredients you provide.  
+Chef Claude is a React-based web app that generates creative recipes from a list of ingredients you provide (at least 4 ingredients).  
 It uses AI models via the **Hugging Face Inference API** to craft unique cooking ideas, displayed beautifully using Markdown.
 
 ---
@@ -71,3 +71,7 @@ To run this app locally, you need a **Hugging Face API key**.
 ```bash
 npm run build
 ```
+
+📸 Demo
+![project-screenshot1](./images/screenshot-project1.png)
+![project-screenshot2](./images/screenshot-project2.png)

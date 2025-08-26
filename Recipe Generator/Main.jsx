@@ -11,12 +11,28 @@ export default function Main() {
 
     const [loading, setLoading] = React.useState(false);
 
+    const recipeSection = React.useRef(null);
+
+    const spinnerSection = React.useRef(null);  
+
     async function getRecipe() {
         setLoading(true); // show spinner
         const recipeMarkdown = await getRecipeFromMistral(ingredients);
         setRecipe(String(recipeMarkdown));
         setLoading(false); // hide spinner
-}
+    }
+
+    React.useEffect(() => {
+        if (loading && spinnerSection.current !== null) {
+            spinnerSection.current.scrollIntoView({behavior: "smooth"})
+        }
+    }, [loading])
+
+    React.useEffect(() => {
+        if (recipe !== "" && recipeSection.current !== null) {
+            recipeSection.current.scrollIntoView({behavior: "smooth"})
+        }
+    }, [recipe])
 
     function addIngredient(formData) {
         const newIngredient = formData.get("ingredient")
@@ -41,8 +57,12 @@ export default function Main() {
                     getRecipe={getRecipe}
                 />
             }
-            {loading && <div className="spinner"></div>}
-            {recipe && <ClaudeRecipe recipe={recipe} />}
+            {loading && <div ref={spinnerSection} className="spinner"></div>}
+            {recipe && (
+            <div ref={recipeSection}>
+                <ClaudeRecipe recipe={recipe} />
+            </div>
+            )}
         </main>
     )
 }
