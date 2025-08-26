@@ -5,7 +5,11 @@ This repo is for learning, experimenting, and building fun apps with React.
 
 📂 Projects
 
-Chef Claude – AI-powered recipe generator using HuggingFace API.
+👨‍🍳 Chef Claude – AI-powered recipe generator using HuggingFace API.
+
+⚔️ Assembly: Endgame
+
+🎲 Tenzies
 
 📦 Deployment
 
