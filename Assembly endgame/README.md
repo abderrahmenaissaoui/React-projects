@@ -51,12 +51,12 @@ npm run build
 
 📸 Demo
 
-![project-screenshot1](./images/project-screenshot0.png)
+![project-screenshot1](./images/project-screenshot0.jpg)
 
 # Won!
 
-![project-screenshot2](./images/project-screenshot1.png)
+![project-screenshot2](./images/project-screenshot1.jpg)
 
 # Lost!
 
-![project-screenshot1](./images/project-screenshot2.png)
+![project-screenshot1](./images/project-screenshot2.jpg)

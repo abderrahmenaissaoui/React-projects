@@ -62,8 +62,8 @@ Click New Game to play again.
 
 📸 Demo
 
-![project-screenshot1](./images/project-screenshot1.png)
+![project-screenshot1](./images/project-screenshot1.jpg)
 
 # Won!
 
-![project-screenshot2](./images/project-screenshot2.png)
+![project-screenshot2](./images/project-screenshot2.jpg)
