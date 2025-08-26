@@ -73,5 +73,7 @@ npm run build
 ```
 
 📸 Demo
+
 ![project-screenshot1](./images/screenshot-project1.png)
+
 ![project-screenshot2](./images/screenshot-project2.png)
